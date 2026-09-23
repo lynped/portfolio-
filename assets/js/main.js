@@ -1,6 +1,6 @@
 /**
  * Portfolio JavaScript - Lưu Thế Kiệt (Senior Sales Executive)
- * Features: Dark/Light Mode, Scroll Animations, KPI Counter, Project Filter, Modal Case Studies, Contact Form & Toast.
+ * Features: Dark/Light Mode, Scroll Animations, KPI Counter, Project Filter, Contact Form & Toast.
  */
 
 document.addEventListener('DOMContentLoaded', () => {

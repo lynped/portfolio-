@@ -13,8 +13,8 @@ Website Portfolio cá nhân hiện đại, tối giản và chuyên nghiệp dà
    - **Hero Section**: Tiêu đề ấn tượng, bio súc tích, 2 nút CTA (Xem dự án & Liên hệ), thẻ chân dung chuyên nghiệp kèm badge động và hàng số liệu KPI sống động (CountUp animation).
    - **About Me**: Triết lý bán hàng, bảng kỹ năng cốt lõi (Core Sales Competencies) hiển thị dạng thẻ badge icon đẹp mắt, kết hợp thế mạnh công nghệ thông tin (Quản trị Mạng ITC).
    - **Kinh Nghiệm Làm Việc (Timeline)**: Lộ trình 5+ năm đồng hành cùng các tập đoàn lớn (WinEco - Masan Group, Paradise Fine Foods, Vạn Thịnh Phú, Coca-Cola Việt Nam).
-   - **Portfolio / Projects**: Lưới hiển thị các chiến dịch bán hàng thực tế, có bộ lọc danh mục (Kênh MT, CVS, GT, Nông sản & Thực phẩm), và Popup Modal hiển thị Case Study chuyên sâu (Bối cảnh - Thách thức - Giải pháp - Kết quả).
-   - **Contact Section**: Form liên hệ trực tuyến có kiểm tra tính hợp lệ dữ liệu và Toast notification; Thẻ thông tin liên hệ trực tiếp (SĐT 096.269.1371, Email luuthekiet95@gmail.com, Quận 11 TP.HCM) với nút sao chép một chạm.
+   - **Portfolio / Projects**: Lưới hiển thị các chiến dịch bán hàng thực tế, có bộ lọc danh mục (Kênh MT, CVS, GT, Nông sản & Thực phẩm), kèm nút hành động kết nối trực tiếp.
+   - **Contact Section**: Form liên hệ trực tuyến có kiểm tra tính hợp lệ dữ liệu và Toast notification; Thẻ thông tin liên hệ trực tiếp (SĐT 096.269.1371, Email luuthekiet95@gmail.com, Zalo) với nút sao chép một chạm.
 
 3. **Công Nghệ Sử Dụng**:
    - **HTML5**: Cấu trúc semantic, chuẩn SEO và trợ năng (Accessibility).
@@ -30,7 +30,7 @@ portfolio-luu-the-kiet/
 │   ├── css/
 │   │   └── style.css       # Các hiệu ứng chuyển động, custom scrollbar, glassmorphism
 │   ├── js/
-│   │   └── main.js         # Xử lý Dark/Light mode, Mobile Menu, Filter, Modal, Toast
+│   │   └── main.js         # Xử lý Dark/Light mode, Mobile Menu, Filter, Toast
 │   └── img/
 │       └── avatar.jpg      # Ảnh chân dung thực tế trích xuất từ hồ sơ CV
 └── README.md               # Hướng dẫn sử dụng và tùy biến
