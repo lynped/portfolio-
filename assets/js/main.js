@@ -1,6 +1,6 @@
 /**
  * Portfolio JavaScript - Lưu Thế Kiệt (Senior Sales Executive)
- * Features: Dark/Light Mode, Scroll Animations, KPI Counter, Project Filter, Contact Form & Toast.
+ * Features: Dark/Light Mode, Scroll Animations, KPI Counter, Project Filter & Toast.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollAnimations();
   initKpiCounters();
   initProjectFilters();
-  initContactForm();
   initCopyToClipboard();
   initBackToTop();
   initScrollSpy();
@@ -166,78 +165,10 @@ function initProjectFilters() {
 
       projectCards.forEach(card => {
         const categories = card.getAttribute('data-category').split(' ');
-        if (filterValue === 'all' || categories.includes(filterValue)) {
-          card.style.display = 'flex';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 50);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 300);
-        }
+        const visible = filterValue === 'all' || categories.includes(filterValue);
+        card.style.display = visible ? 'flex' : 'none';
       });
     });
-  });
-}
-
-/* ----------------------------------------------------
- * 6. CONTACT FORM VALIDATION & TOAST
- * ---------------------------------------------------- */
-function initContactForm() {
-  const contactForm = document.getElementById('contact-form');
-  if (!contactForm) return;
-
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    const nameInput = document.getElementById('contact-name');
-    const emailInput = document.getElementById('contact-email');
-    const phoneInput = document.getElementById('contact-phone');
-    const messageInput = document.getElementById('contact-message');
-    const submitBtn = document.getElementById('contact-submit-btn');
-
-    // Validation
-    if (!nameInput.value.trim()) {
-      showToast('Vui lòng nhập Họ và Tên của bạn.', 'error');
-      nameInput.focus();
-      return;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailInput.value.trim() || !emailRegex.test(emailInput.value.trim())) {
-      showToast('Vui lòng nhập địa chỉ Email hợp lệ.', 'error');
-      emailInput.focus();
-      return;
-    }
-
-    if (!messageInput.value.trim()) {
-      showToast('Vui lòng để lại lời nhắn hoặc yêu cầu hợp tác.', 'error');
-      messageInput.focus();
-      return;
-    }
-
-    // Button loading state
-    const originalText = submitBtn.innerHTML;
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = `
-      <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-      </svg>
-      Đang gửi tin nhắn...
-    `;
-
-    // Simulate sending network request
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = originalText;
-      contactForm.reset();
-      showToast('Cảm ơn bạn! Lời nhắn đã được gửi thành công đến anh Lưu Thế Kiệt. Anh Kiệt sẽ phản hồi sớm nhất!', 'success');
-    }, 1200);
   });
 }
 
