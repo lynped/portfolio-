@@ -1,5 +1,5 @@
 /**
- * Portfolio JavaScript - Lưu Thế Kiệt (Senior Sales Executive)
+ * Portfolio JavaScript - Lưu Thế Kiệt (Sale Supervisor MT & CVS tại IMV)
  * Features: Dark/Light Mode, Scroll Animations, KPI Counter, Project Filter & Toast.
  */
 

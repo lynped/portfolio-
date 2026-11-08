@@ -1,6 +1,6 @@
-# Portfolio Cá Nhân - Lưu Thế Kiệt (Senior Sales Executive)
+# Portfolio Cá Nhân - Lưu Thế Kiệt (Sale Supervisor MT & CVS tại IMV)
 
-Website Portfolio cá nhân hiện đại, tối giản và chuyên nghiệp dành cho **Lưu Thế Kiệt** — Chuyên viên Kinh doanh Cấp cao chuyên về Kênh Bán Lẻ Hiện Đại (MT), Chuỗi Tiện Lợi (CVS, Minimart: Winmart+, AEON, Satra, BHX) và Kênh Truyền Thống (GT) trong ngành FMCG / Nông sản / Thực phẩm.
+Website Portfolio cá nhân của **Lưu Thế Kiệt — Sale Supervisor kênh MT & CVS tại IMV**, phụ trách hai nhãn hàng **Pigeon & Etsuko**.
 
 ## 🚀 Tính Năng Nổi Bật
 
